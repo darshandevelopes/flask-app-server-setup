@@ -21,7 +21,7 @@ This Bash script is designed to automate the initial setup of a server for hosti
 
 ## Usage
 
-1. Ensure you have a Git repository for your Flask app.
+1. Ensure You Have a Git Repository for Your Flask App ([Example](https://github.com/darshandevelopes/flask-hello-world.git))
 
 2. Make the script executable:
    ```bash
