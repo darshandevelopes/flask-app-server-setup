@@ -62,7 +62,7 @@ Checks your Flask app’s Gunicorn logs.
 ```bash
 sudo journalctl -u flask_app_dir
 ```
-## Extra - Secure Your Flask App with an SSL Certificate
+## Extra - Secure your Flask app with an SSL certificate
 ```bash
 sudo apt install python3-certbot-nginx
 sudo certbot --nginx -d your_domain -d www.your_domain
