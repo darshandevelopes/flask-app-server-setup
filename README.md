@@ -13,10 +13,10 @@ This Bash script is designed to automate the initial setup of a server for hosti
 
 ## Requirements
 
-Ubuntu 22.04
-Port 80 open to all internet traffic
-Flask app's entry point named app.py
-Flask app's requirements.txt includes 'wheel', 'gunicorn', and 'flask'
+- Ubuntu 22.04
+- Port 80 open to all internet traffic
+- Flask app's entry point named app.py
+- Flask app's requirements.txt includes 'wheel', 'gunicorn', and 'flask'
 
 
 ## Usage
