@@ -43,5 +43,29 @@ This Bash script is designed to automate the initial setup of a server for hosti
 - Back up important data before running the script, as it makes significant changes to your system configuration.
 - Review the script carefully and test it in a controlled environment before using it on a production server.
 
+## Debug
+If you encounter any errors, trying checking the following:
+
+Check the Nginx error logs
+```bash
+sudo less /var/log/nginx/error.log
+```
+Check the Nginx access logs
+```bash
+sudo less /var/log/nginx/access.log
+```
+Check the Nginx process logs
+```bash
+sudo journalctl -u nginx
+```
+Checks your Flask app’s Gunicorn logs.
+```bash
+sudo journalctl -u flask_app_dir
+```
+## Extra - Secure Your Flask App with an SSL Certificate
+```bash
+sudo apt install python3-certbot-nginx
+sudo certbot --nginx -d your_domain -d www.your_domain
+```
 ## Disclaimer
 Use this script at your own risk. The script is provided as-is, and the authors are not responsible for any issues or data loss that may occur as a result of its use.
